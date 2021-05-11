@@ -1,0 +1,182 @@
+*{
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+	
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-color:whitesmoke;
+	
+}
+
+#logo{
+	background-color: whitesmoke;
+	color: #000;
+	height:auto;
+	width: 100%;
+	position: sticky;
+	top:0;
+	z-index: 1;
+	font-size: 18px;
+	text-align:left;
+	padding:0;
+	
+	
+}
+.search-box{
+	display:flex;
+	left: 50%;
+	background: #000;
+	height: auto;
+	border-radius: 40px;
+	padding: 10px;
+	align:center;
+}
+
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+	background: white;
+	
+}
+.search-btn{
+	color: purple;
+	float:right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-txt{
+	border:none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition:0.4s;
+	align-items: center;
+	line-height: 40px;
+}
+
+#container{
+	width: auto;
+	margin: auto;
+	height: auto;
+	padding-top: 0;
+}
+section{
+	
+	width:100%;
+	height:auto;
+	background-color: white;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+	overflow: auto;
+	
+	
+}
+nav{
+	background-color:#4da6ff;
+	width:100%;
+	float: left;
+	margin-top:0px;
+	height:auto;
+	padding-top:2px;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	
+	
+}
+
+nav ul{
+	width: auto;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+nav li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav li a{
+	height:50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px transparent #b4b4b4;
+	padding-left:20px;
+	display: inline-block;
+}
+
+nav li a:hover{
+	color:white;
+	background-color: #adadad;
+}
+.ilanlar{
+	padding:  10px 0 0;
+	margin: 10px 0 10px 0;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	float: left;
+	
+}
+.ilan{
+	width: 30%;
+	float: left;
+	padding: 15px 0 0 0;
+}
+.ilan-baslik{
+	font-family: 'Arial', sans-serif;
+	font-size: 21px;
+	font-weight: 600;
+}
+.ilan-foto{
+	max-width:150px;
+	height: auto;
+}
+.ilan-icerik{
+	font-family: inherit;
+	font-size: 14px;
+	
+}
+.ilan-bilgileri{
+	width:30%;
+	font-family: inherit;
+	font-size:14px;
+	height:10%;
+	Position: top;
+	align:top;
+}
+
+footer{
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-content p{
+    padding-top: 15px;
+}
