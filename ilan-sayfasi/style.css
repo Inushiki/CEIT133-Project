@@ -23,17 +23,37 @@ body{
 	font-size: 18px;
 	text-align:left;
 	padding:0;
-	
-	
+}	
+.button{
+    position:absolute;
+    float: right;
+    top: 40%;
+    right: 1%;
+	align-items:center;
+}
+
+.btn{
+    border: 2px solid brown;
+    padding: 6px 30px;
+    color:black;
+    text-decoration:none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    color: white;
+    background-color: dimgray;
+}
 }
 .search-box{
 	display:flex;
 	left: 50%;
-	background: #000;
+	background: purple;
 	height: auto;
+	border: 2px solid brown;
 	border-radius: 40px;
-	padding: 10px;
-	align:center;
+	padding: 5px;
+	
 }
 
 .search-box:hover > .search-txt{
@@ -55,10 +75,12 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left:5px;
 }
 
 .search-txt{
-	border:none;
+	border:2px solid black;
+	border-radius:20px;
 	background: none;
 	outline: none;
 	float: left;
@@ -70,17 +92,15 @@ body{
 	line-height: 40px;
 }
 
-#container{
-	width: auto;
-	margin: auto;
-	height: auto;
-	padding-top: 0;
+
 }
-section{
+section-head{
 	
-	width:100%;
+	width:auto;
 	height:auto;
-	background-color: white;
+	margin:auto;
+	padding-top:0;
+	background-color: gray;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
@@ -94,15 +114,16 @@ nav{
 	background-color:#4da6ff;
 	width:100%;
 	float: left;
-	margin-top:0px;
+	margin-top:0;
 	height:auto;
-	padding-top:2px;
 	display:flex;
-	align-items:center;
 	justify-content: space-between;
-	
+	position:fixed;
+	align-items:center;
+	align-content:stretch;
 	
 }
+	
 
 nav ul{
 	width: auto;
@@ -114,6 +135,7 @@ nav ul{
 nav li{
 	list-style-type: none;
 	display: inline-block;
+	width:auto;
 }
 
 nav li a{
@@ -128,21 +150,33 @@ nav li a{
 
 nav li a:hover{
 	color:white;
-	background-color: #adadad;
+	background-color: #whitesmokes;
+}
+
+section-content{
+	height:100%;
+	width:100%;
+	top:2px;
+	left:50%;
+	
 }
 .ilanlar{
-	padding:  10px 0 0;
-	margin: 10px 0 10px 0;
+	padding:  50px 0 0 0;
+	margin: 50px 0 0 50px;
 	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 50px;
+	padding-right: 0px;
 	float: left;
+	
+	
 	
 }
 .ilan{
 	width: 30%;
 	float: left;
-	padding: 15px 0 0 0;
+	padding: 20px 20px 20px 20px;
+	border:1px solid brown;
+	border-radius:10px;
 }
 .ilan-baslik{
 	font-family: 'Arial', sans-serif;
@@ -156,6 +190,7 @@ nav li a:hover{
 .ilan-icerik{
 	font-family: inherit;
 	font-size: 14px;
+	font-weight: 600;
 	
 }
 .ilan-bilgileri{
