@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+<body>
+    <a href="#" class="map">Location</a>
+    
+    <style>
+        .map{
+            width: 100px;
+            text-decoration: none;
+            padding: 5px 15px;
+            color: bisque;
+            background-color: rgb(54, 19, 7);
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        var map=document.querySelector(".map");
+        map.addEventListener("click",getLocation())
+        function getLocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(displayposition)
+            }
+        }
+        function displayposition(psition) {
+            var mapurl = "https://www.google.com/maps/@" + psition.coords.lalatitude + "," + psition.coords.longitude + ",14z";
+            map.href=mapurl
+        }
+    </script>
+</body>
+</html>
