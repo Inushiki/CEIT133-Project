@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DeBookers</title>
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+	<script src="https://kit.fontawesome.com/04f74f0bd5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section-head>
+		<div id="logo"><a href="../CEIT133-Project-Assemble/main.html"><img src="logomuz.png" width="200px"></a>
+			<div class="button">
+				<a href= "#" class="btn">Sell</a>
+				<a href="#"  class="btn">Profile</a>
+			</div>
+		</div>	
+
+    <a class="upbutton" href="#">  <i class="fas fa-chevron-up"></i> </a>
+		
+		<div id="progressbar"></div>
+		<nav> 
+				<ul>
+					<li><a href="../CEIT133-Project-Assemble/main.html">Homepage</a></li>
+					<li><a href="../CEIT133-Project-Assemble/orders.html">Orders</a>
+                  <ul>
+                <li> <a href="#"> Textbooks </a></li>
+                <li> <a href="#"> Books </a></li>
+                <li> <a href="#"> Notebooks </a></li>
+                <li> <a href="#"> Lecture Notes </a></li>
+                <li> <a href="#"> Others </a></li>
+              </ul>
+          </li>
+					<li><a href="../CEIT133-Project-Assemble/help-page.html">Help</a></li>
+				</ul>
+				<div class="search-box">
+					<input class="search-txt" type="text" name="" placeholder="Type to search">
+					<a class="search-btn" href"#">
+					<i class="fas fa-search"></i></a>
+				</div>
+		</nav>
+	</section-head>
+   
+    <br>
+	<br>
+	<br>
+	<br>
+	
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <div class="numbertext">1/2</div>
+            <img src="photo1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/2</div>
+            <img src="photo2.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <br>
+        <br>
+        <br>
+        <div class="highlights">
+        <a href="#" class="topviewed">Top Viewed Books</a>
+        </div>
+	<<footer>
+			
+				<div class="©Debookers"><h2>©Debookrs</h2></div>
+				<div class="Rights">
+				<p><b>2021 Ankara,Turkey </b></p>
+				<p><em>All rights reserved.</em></p>
+				</div>
+				<div class="social">
+                <a href="#" > <img src="twitterlogo.png" width="30"   ></a>
+                <a href="#" > <img src="facebooklogo.png" width="30"    ></a>
+                <a href="#" > <img src="instagramlogo.png" width="30"   ></a>
+				</div>           			
+		</footer>
+</body>
+</html>
